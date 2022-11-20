@@ -25,8 +25,8 @@ const TicTacToe = () => {
 
 const Square = (props) => {
   return (<>
-    <Grid onClick={()=>{props.onClick(props.id)}} item md={4} sx={{cursor:'pointer',border:'1px solid black',display:'flex',justifyContent:'center',alignItems:'center'}}>
-      <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',height:'150px',width:'150px'}}>
+    <Grid onClick={()=>{props.onClick(props.id)}} item md={4} xs={4} sx={{cursor:'pointer',border:'1px solid black',display:'flex',justifyContent:'center',alignItems:'center'}}>
+      <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',height:['50px','50px','150px'],width:['50px','50px','150px']}}>
         {props.square === 1 && <CloseIcon />}
         {props.square === 2 && <PanoramaFishEyeIcon />}
       </Box>
